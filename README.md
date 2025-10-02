@@ -1,16 +1,16 @@
-# Principles of Programming Languages (PPL 242) — Assignment 3
+# Principles of Programming Languages — Assignment 3
 
-Third assignment for **Principles of Programming Languages (PPL 242)**.  
+Third assignment for **Principles of Programming Languages**.  
 Focus: designing and implementing **L52**, a typed language extending L5 with **set-based type operators** and **type predicates**.  
 
 ---
 
 ## Overview
-- **Part 1 – Theory (12 pts):**  
+- **Part 1 – Theory:**  
   - Typing judgments for higher-order functions and closures.  
   - Reasoning about environments, closures, and evaluation rules.  
 
-- **Part 2 – L52 Types & Predicates (18 pts):**  
+- **Part 2 – L52 Types & Predicates:**  
   - New type expressions:  
     - `any` (supertype of all types).  
     - `never` (subtype of all types, empty type).  
@@ -19,7 +19,7 @@ Focus: designing and implementing **L52**, a typed language extending L5 with **
     - `(diff T1 T2)` – set difference of types.  
   - Type predicates `(Any -> is? T)` for flow-sensitive typing (like TypeScript’s `x is T`).  
 
-- **Part 3 – Implementing L52 (70 pts):**  
+- **Part 3 – Implementing L52:**  
   - Extended the **AST** and **parser** with new type forms and predicates.  
   - Implemented **normalization rules**:  
     - Flatten unions/intersections.  
